@@ -1,9 +1,9 @@
 #### vue3列表页封装
-vue3 element-plus 基于若依vue3项目做的列表页的封装
+vue3 element-plus 基于若依vue3项目做的列表页的封装  
 只封装数据而不封装页面
 
 ##### useList.js 只有获取列表数据一项功能
-列表基础数据在这里定义，具体接口请求使用时传递，
+列表基础数据在这里定义，具体接口请求使用时传递，  
 搜索参数也是传递 ref 传递过来
 ```js
 import { onMounted, ref, unref, watch } from 'vue';
@@ -89,7 +89,7 @@ export default function useList(listRequestFn, options = {}) {
   };
 }
 ```
-useTableList.js 删除等列表相关小功能
+useTableList.js 删除等列表相关小功能  
 本来应该单独拆开的 懒得拆了
 ```js
 import { computed, ref, onMounted } from 'vue';
@@ -245,9 +245,9 @@ const {
   },
 );
 ```
-一个一个去重命名也太麻烦了
-修改一下 主要是view部分手动加上.value
-一开始因为这个报错走了一些弯路
+一个一个去重命名也太麻烦了  
+修改一下 主要是view部分手动加上.value  
+一开始因为这个报错走了一些弯路  
 ```js
 <el-card class="box-card" style="margin-top: 20px">
   <template #header>
